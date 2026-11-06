@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Booking form</h1>
+        <p>
+            please enter your details and secure your slot
+        </p>
+    </header>
+    <main>
+        <form action="/submit">
+
+            <label for="phone">phone (mpesa)</label>
+            <input type="tel" id="phone" name="phone" placeholder="please enter your number ...">
+            <br>
+            <label class="slot">
+                 <input type="radio" name="time" value="9:30" disabled><span>10:00</span>
+            </label>
+            <br>
+            <label for="name">
+
+            </label>   
+            <input type="text" placeholder="enter your name" required> <br>
+            <label for="message">message:</label>  
+            <textarea name="message" id="name" >
+                Enter your message ...
+            </textarea>
+            <br><br>
+            <label for="email">email</label>
+            <input type="email"><br><br>
+            <label for="password">password:</label>
+            <input type="password"><br>
+            <label for="category">category</label>
+            <select name="category" id="category">
+                <option value="">-- select an option --</option> 
+                <option value="option1">option 1</option>
+                <option value="option2">option 2</option>
+                <option value="option3">option 3</option>
+                <option value="option4">option4</option>
+            </select> <br>
+            <label for="preferences">preferences</label>
+           <label for="notifications"> 
+            <input type="checkbox" name="preferences" value="notifications">notifications</label>
+           <label for="newsletter"> 
+            <input type="checkbox" name="preferences" value="notifications">newsletter</label>
+           <label for="updates"> 
+            <input type="checkbox" name="preferences" value="newsletter">updates</label>
+            <label for="date">date</label>
+            <input type="date" id="date" name="date"><br>
+            <label for="color">theme color:</label>
+            <input type="color" id="color" name="color" value="blue">
+             <br>
+             <label for="submit">submit
+                <input type="submit" id="submit" name="submit">
+             </label>
+            
+        </form>
+        <section>
+            <audio controls preload="none">
+            <source src="assets/subaru idle startup engine.mp3 " type="audio/mp3">
+            </audio>
+        </section>
+        <section>
+            <video controls preload="none" poster="assets/logo.jpg" width="630" height="300">
+                <source src="assets/subaru idle startup engine.mp3" type="audio/mp3">
+            </video>
+        </section>
+
+    </main>
+
+    
+</body>
+</html>
